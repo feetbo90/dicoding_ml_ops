@@ -3,7 +3,7 @@ FROM tensorflow/serving:2.8.0
 COPY serving_model /models/diabetes-model
 
 ENV MODEL_NAME=diabetes-model
-ENV PORT=8501
+ENV PORT=8080
 
 RUN echo '#!/bin/bash \n\n\
     env \n\
